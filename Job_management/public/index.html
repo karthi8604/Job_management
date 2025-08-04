@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Job Listings</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <style>
+    nav { max-width: 1200px; margin: 0 auto; }
+    .btn-purple { background-color: #6f42c1; color: #fff; border-radius: 12px; }
+    .modal-dialog { display: flex; align-items: center; justify-content: center; min-height: 100vh; }
+    .modal-content { aspect-ratio: 1/1; width: 100%; max-width: 600px; }
+    #salaryValue { font-weight: bold; }
+  </style>
+</head>
+<body>
+  <nav class="bg-white shadow-sm">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center py-3">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="Logo" width="30">
+        <ul class="nav">
+          <li class="nav-item"><a class="nav-link px-3 text-dark" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link px-3 text-dark" href="#">Find Jobs</a></li>
+          <li class="nav-item"><a class="nav-link px-3 text-dark" href="#">Find Talents</a></li>
+          <li class="nav-item"><a class="nav-link px-3 text-dark" href="#">About Us</a></li>
+          <li class="nav-item"><a class="nav-link px-3 text-dark" href="#">Testimonials</a></li>
+        </ul>
+        <button class="btn btn-purple" data-bs-toggle="modal" data-bs-target="#createJobModal">Create Job</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Filters -->
+  <div class="container mt-4">
+    <div class="row g-2">
+      <div class="col-md-4">
+        <input type="text" id="searchInput" class="form-control" placeholder="Search by Job Title, Role">
+      </div>
+      <div class="col-md-3">
+        <select id="locationFilter" class="form-select">
+          <option value="">Preferred Location</option>
+          <option value="Chennai">Chennai</option>
+          <option value="Bangalore">Bangalore</option>
+          <option value="Remote">Remote</option>
+        </select>
+      </div>
+      <div class="col-md-3">
+        <select id="typeFilter" class="form-select">
+          <option value="">Job Type</option>
+          <option value="Full-time">Full-Time</option>
+          <option value="Internship">Internship</option>
+          <option value="Part-Time">Part-Time</option>
+          <option value="Contract">Contract</option>
+        </select>
+      </div>
+      <div class="col-md-2">
+        <span id="salaryValue">₹10000</span>
+        <input type="range" class="form-range" id="salaryRange" min="10000" max="200000" step="10000">
+        <small class="text-muted">Salary per month</small>
+      </div>
+    </div>
+  </div>
+
+  <!-- Job Cards -->
+  <div class="container mt-5">
+    <div class="row row-cols-1 row-cols-md-4 g-4" id="job-listings"></div>
+  </div>
+
+  <!-- Create Job Modal -->
+  <div class="modal fade" id="createJobModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <form id="jobForm">
+          <div class="modal-header">
+            <h5 class="modal-title">Create Job Opening</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label>Job Title</label>
+                <input type="text" class="form-control" id="jobTitle" required>
+              </div>
+              <div class="col-md-6">
+                <label>Company Name</label>
+                <input type="text" class="form-control" id="companyName" required>
+              </div>
+              <div class="col-md-6">
+                <label>Location</label>
+                <select class="form-select" id="location">
+                  <option>Remote</option>
+                  <option>Chennai</option>
+                  <option>Bangalore</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label>Job Type</label>
+                <select class="form-select" id="jobType">
+                  <option>Internship</option>
+                  <option>Full-time</option>
+                  <option>Part-Time</option>
+                  <option>Contract</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label>Salary Range</label>
+                <div class="input-group">
+                  <span class="input-group-text">₹</span>
+                  <input type="number" class="form-control" id="salaryMin" placeholder="From">
+                  <input type="number" class="form-control" id="salaryMax" placeholder="To">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label>Application Deadline</label>
+                <input type="date" class="form-control" id="deadline">
+              </div>
+              <div class="col-12">
+                <label>Job Description</label>
+                <textarea class="form-control" rows="4" id="description"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-purple">Publish Job</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

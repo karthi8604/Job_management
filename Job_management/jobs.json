@@ -1,0 +1,82 @@
+[
+  {
+    "title": "Full Stack Developer",
+    "company": "Company A",
+    "location": "Remote",
+    "salary": "5-7 LPA",
+    "logo": "https://logo.clearbit.com/amazon.com",
+    "experience": "0-2 yrs",
+    "type": "Full-time",
+    "description": "Looking for React.js developers to join our team."
+  },
+  {
+    "title": "Node Js Developer",
+    "company": "Company B",
+    "location": "Bangalore",
+    "salary": "8-10 LPA",
+    "logo": "https://logo.clearbit.com/tesla.com",
+    "experience": "2-4 yrs",
+    "type": "Full-time",
+    "description": "Responsible for developing REST APIs in Node.js."
+  },
+  {
+    "title": "UI/UX Designer",
+    "company": "Company C",
+    "location": "Remote",
+    "salary": "5-7 LPA",
+    "logo": "https://logo.clearbit.com/swiggy.com",
+    "experience": "0-2 yrs",
+    "type": "Full-time",
+    "description": "Looking for React.js developers to join our team."
+  },
+  {
+    "title": "Full Stack Developer",
+    "company": "Company D",
+    "location": "Bangalore",
+    "salary": "8-10 LPA",
+    "logo": "https://logo.clearbit.com/amazon.com",
+    "experience": "2-4 yrs",
+    "type": "Full-time",
+    "description": "Responsible for developing REST APIs in Node.js."
+  },
+  {
+    "title": "Node Js Developer",
+    "company": "Company E",
+    "location": "Bangalore",
+    "salary": "8-10 LPA",
+    "logo": "https://logo.clearbit.com/tesla.com",
+    "experience": "2-4 yrs",
+    "type": "Full-time",
+    "description": "Responsible for developing REST APIs in Node.js."
+  },
+  {
+    "title": "UI/UX Designer",
+    "company": "Company F",
+    "location": "Remote",
+    "salary": "5-7 LPA",
+    "logo": "https://logo.clearbit.com/swiggy.com",
+    "experience": "0-2 yrs",
+    "type": "Full-time",
+    "description": "Looking for React.js developers to join our team."
+  },
+  {
+    "title": "Full Stack Developer",
+    "company": "Company G",
+    "location": "Remote",
+    "salary": "5-7 LPA",
+    "logo": "https://logo.clearbit.com/amazon.com",
+    "experience": "0-2 yrs",
+    "type": "Full-time",
+    "description": "Looking for React.js developers to join our team."
+  },
+  {
+    "title": "Node Js Developer",
+    "company": "Company H",
+    "location": "Bangalore",
+    "salary": "8-10 LPA",
+    "logo": "https://logo.clearbit.com/tesla.com",
+    "experience": "2-4 yrs",
+    "type": "Full-time",
+    "description": "Responsible for developing REST APIs in Node.js."
+  }
+]
